@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Prasanna Gayathri T S</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+<header class="site">
+  <div class="wrap">
+    <div class="navbar">
+      <div class="brand">prasanna<span>.</span></div>
+      <nav class="pills">
+        <a href="index.html">home</a>
+        <a href="projects.html" class="current">projects</a>
+        <a href="achievements.html">achievements</a>
+      </nav>
+      <a class="nav-cta" href="index.html#contact">get in touch</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap" style="padding-top:48px;">
+    <div class="eyebrow-line"></div>
+    <div class="eyebrow">projects</div>
+    <h1 style="font-size:34px;">Selected work</h1>
+    <p class="lede">Four projects spanning distributed NLP, multimodal classification, full-stack platforms, and race-condition-safe systems.</p>
+
+    <div class="section" style="border-top:none;padding-top:36px;">
+
+      <div class="project">
+        <div class="project-row">
+          <div class="project-icon">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <path d="M12 36C12 20 24 10 40 8C40 24 30 36 14 36" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 36C14 28 18 22 24 18" stroke="var(--teal)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-name">Amazon Sustainability Classifier</div>
+            <div class="project-meta">Large-scale NLP pipeline · Python, Hadoop, BERT, Scikit-learn</div>
+            <ul class="project-desc">
+              <li>Built a distributed text processing pipeline on Hadoop, using MapReduce to batch-process 1,000+ Amazon customer reviews across commodity hardware.</li>
+              <li>Handled end-to-end data wrangling with Pandas and NumPy — tokenization, null handling, and feature transformation to prepare model-ready inputs.</li>
+              <li>Fine-tuned BERT embeddings for sentiment classification (positive/negative/neutral), improving precision over a TF-IDF baseline.</li>
+              <li>Designed a multi-label classification layer to tag products as sustainable or non-sustainable from aggregated review signals.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Hadoop</span><span class="tag">BERT</span><span class="tag">NLP</span><span class="tag">Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <div class="project-icon">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="6" width="18" height="30" rx="3" stroke="var(--violet)" stroke-width="2"/>
+              <line x1="12" y1="30" x2="22" y2="30" stroke="var(--violet)" stroke-width="2" stroke-linecap="round"/>
+              <path d="M28 14h12l-2 16H30l-2-16z" stroke="var(--coral)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M31 14v-3a3 3 0 0 1 6 0v3" stroke="var(--coral)" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-name">Multimodal Grocery Recognition</div>
+            <div class="project-meta">Fusion classification pipeline · Python, OpenCV, Scikit-learn, OCR, RAG, Gemini LLM</div>
+            <ul class="project-desc">
+              <li>Built a data fusion pipeline combining OCR-extracted text features with image-based visual features to classify grocery items.</li>
+              <li>Benchmarked multiple classifiers (SVM, Logistic Regression, Random Forest), achieving ~90% accuracy on the final model.</li>
+              <li>Integrated a RAG pipeline with the Gemini LLM to generate contextual product insights from extracted label and packaging data.</li>
+              <li>Added EU Nutri-Score computation from extracted nutritional data, giving each product an at-a-glance health rating.</li>
+              <li>Built an allergen detection layer that flags common allergens from ingredient lists automatically.</li>
+              <li>Created a modular preprocessing pipeline for feature extraction and normalization, reusable across classification tasks.</li>
+              <li>Deployed as an interactive Streamlit web app on Streamlit Community Cloud, with version control via Git/GitHub.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">OpenCV</span><span class="tag">OCR</span><span class="tag">Scikit-learn</span><span class="tag">RAG</span><span class="tag">Gemini LLM</span><span class="tag">Streamlit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <div class="project-icon">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <circle cx="18" cy="16" r="3.5" stroke="var(--coral)" stroke-width="2"/>
+              <circle cx="28" cy="14" r="3.5" stroke="var(--coral)" stroke-width="2"/>
+              <circle cx="12" cy="24" r="3.5" stroke="var(--coral)" stroke-width="2"/>
+              <circle cx="34" cy="23" r="3.5" stroke="var(--coral)" stroke-width="2"/>
+              <path d="M23 26c-7 0-11 5-11 9 0 3 3 5 6 4 3-1 4-2 6-2s3 1 6 2c3 1 6-1 6-4 0-4-4-9-11-9z" stroke="var(--coral)" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-name">Online Pet Care</div>
+            <div class="project-meta">Pet care service &amp; community platform · JavaScript, Node.js, MongoDB</div>
+            <ul class="project-desc">
+              <li>Built a comprehensive booking platform for pet care services — grooming, daycare booking, and pet information management.</li>
+              <li>Delivered end-to-end from development to production via GitHub version control and cloud hosting.</li>
+              <li>Built a Node.js and MongoDB service layer handling concurrent transactions, session management, and role-based data access across booking, community feed, and messaging modules.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">REST API</span>
+            </div>
+            <a class="project-link" href="https://github.com/Prasanna-Gayathri/Online-Pet-care" target="_blank" rel="noopener">→ view on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <div class="project-icon">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <circle cx="36" cy="12" r="5" stroke="var(--coral)" stroke-width="2"/>
+              <path d="M6 34h36" stroke="var(--ink-dim)" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 34V24l6-6 6 6v10" stroke="var(--violet)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M6 34c2-4 4-4 6 0M30 34c2-4 4-4 6 0" stroke="var(--teal)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-name">Village Connect</div>
+            <div class="project-meta">Rural services access platform · HTML, CSS, JavaScript</div>
+            <ul class="project-desc">
+              <li>Built a platform bridging rural communities with essential services — medicine delivery, plumbing, and other basic needs.</li>
+              <li>Designed with accessibility for low-connectivity, first-time internet users in mind.</li>
+              <li>Presented as part of the "Introduction to Innovative Projects" course — awarded S grade.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <a class="project-link" href="https://github.com/Prasanna-Gayathri/rural-development" target="_blank" rel="noopener">→ view on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <div class="project-icon">
+            <svg width="36" height="36" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="20" width="12" height="12" rx="1.5" stroke="var(--violet)" stroke-width="2"/>
+              <rect x="22" y="14" width="12" height="18" rx="1.5" stroke="var(--violet)" stroke-width="2"/>
+              <path d="M36 18l4 4-9 9-5-5" stroke="var(--teal)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-name">Allo Health</div>
+            <div class="project-meta">Inventory reservation system · Next.js, TypeScript, Prisma, Supabase</div>
+            <ul class="project-desc">
+              <li>Built a full-stack inventory reservation system with race-condition-safe checkout, ensuring no double-booking under concurrent requests.</li>
+              <li>Used Prisma with Supabase for schema-safe database access and transaction handling.</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">Supabase</span>
+            </div>
+            <a class="project-link" href="https://github.com/Prasanna-Gayathri/allo-health" target="_blank" rel="noopener">→ view on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site"></footer>
+
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>
